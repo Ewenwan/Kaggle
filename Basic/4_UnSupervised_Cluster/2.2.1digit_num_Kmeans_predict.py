@@ -16,14 +16,14 @@ import pandas as pd               # 数据处理
 #digits_train.to_csv("MNIST/train.csv")
 #digits_test.to_csv("MNIST/test.csv")
 ## 从本地打开(数据有点问题)
-digits_train = pd.read_csv("MNIST/train.csv") # 28*28 + 1 =785 第一个为标签
+digits_train = pd.read_csv("MNIST/train.csv")  
 digits_test  = pd.read_csv("MNIST/test.csv")
 
 # 从训练与测试数据集上都分离出64维度的像素特征与1维度的数字目标
-X_train = digits_train[np.arange(64)]
-y_train = digits_train['label'] # 标签 
-X_test = digits_test[np.arange(64)]
-y_test = digits_test[64]
+X_train = digits_train[map(str,np.arange(64))]
+y_train = digits_train['64'] # 标签 
+X_test = digits_test[map(str,np.arange(64))]
+y_test = digits_test['64']
 # 从sklearn.cluster中导入KMeans模型
 from sklearn.cluster import KMeans
 # 初始化KMeans模型，并设置聚类中心数量为10

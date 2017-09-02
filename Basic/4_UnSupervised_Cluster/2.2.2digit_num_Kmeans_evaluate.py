@@ -1,7 +1,7 @@
 #-*- coding:utf-8 -*-
 #!/usr/bin/python
 '''
-手写字体 聚类  K-means聚类算法   轮廓系数评价聚类结果
+ K-means聚类算法   轮廓系数评价聚类结果
 '''
 # 导入numpy
 import numpy as np
