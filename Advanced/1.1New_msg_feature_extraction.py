@@ -121,18 +121,3 @@ print '词频词权重统计样本 过滤停用次 朴素贝叶斯分类器准�
 # 从sklearn.metrics里导入classification_report用于详细的分类性能报告
 from sklearn.metrics import classification_report
 print classification_report(y_test, y_tfidf_filter_predict, target_names = news.target_names)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
