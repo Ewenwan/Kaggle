@@ -25,14 +25,15 @@
 
         提高部分：
             特征提取
-            特征筛选 
+            特征筛选
+            模型正则化
             超参数搜索
-            自然语言处理
+            自然语言处理 NLTH
             词向量模型 
-            集成训练模型 
-            Skflow   将TensorFLow封装为 Sklearn 接口形式
-            
-            
+            XGBoot 集成训练模型 
+            tensorflow
+            Skflow
+
 
 
 
